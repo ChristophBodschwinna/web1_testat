@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Schere Stein Papier</title>
+  <link rel="stylesheet" href="styles/global.css">
+  <!-- TODO: use stylesheet styles/global.css; If done correctly the h1 should be blueviolet -->
+</head>
+<body>
+<header>
+  <h1>Schere Stein Papier</h1>
+</header>
+<main>
+  <section id="ranking">
+  <button id="changeloc" type="button">Wechsel zu Server</button>
+    <h2>Rangliste</h2>
+    <ul id="rankliste">
+    </ul>
+  <p>Starten Sie ein neues Spiel</p>
+    <label for="usernameInput">Name</label>
+    <input id="usernameInput" placeholder="Name" required>
+    <input id="startGame" type="button"  value="Spiel starten">
+    <p id="missingUsername" class="error"></p>
+  </section>
+<section id="game" >
+  <p>Wähle deine Hand</p>
+  <ul id="playOption">
+    <li><button id="stone" type="button">Stein</button></li>
+    <li><button id="scissors" type="button">Schere</button></li>
+    <li><button id="paper" type="button">Papier</button></li>
+  </ul>
+  <p id="statusSpiel">VS</p>
+  <p id="enemy">?</p>
+  <button id="goToRanking" >Zurück zum Ranking</button>
+  <p>History</p>
+  <table id="history">
+    <tr>
+      <th>Result</th>
+      <th>Spieler</th>
+      <th>Gegner</th>
+    </tr>
+  </table>
+
+</section>
+</main>
+<script src="scripts/main.js" type="module"></script>
+
+</body>
+</html>
