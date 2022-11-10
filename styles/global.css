@@ -1,0 +1,19 @@
+h1 {
+    color: blueviolet;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.error {
+    color: red;
+}
+
+ul {
+    list-style-type: none;
+}
